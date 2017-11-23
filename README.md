@@ -18,3 +18,7 @@ If [available in Hex](https://hex.pm/docs/publish), the package can be installed
           [applications: [:map_util]]
         end
 
+## Example
+$ iex -S mix
+iex(1)> lst = :lists.duplicate(10,27)
+iex(2)> MapUtil.Server.pmap(&MapUtil.Fib.fibt_calc/1, lst)
